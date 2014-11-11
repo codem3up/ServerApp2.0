@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+            >
+        <EditText
+                android:layout_height="wrap_content"
+                android:id="@+id/editText"
+                android:layout_width="fill_parent"
+                android:background="@color/white"
+                android:textColor="@color/black"/>
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Send"
+                android:id="@+id/button"
+                android:onClick="sendData" android:layout_gravity="right"/>
+    </LinearLayout>
+
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content"
+                    android:layout_width="fill_parent">
+
+        <ScrollView
+                android:id="@+id/scrollview"
+                android:layout_height="250dp"
+                android:layout_width="fill_parent"
+                android:background="@color/lightgray">
+
+            <TextView
+                    android:id="@+id/response"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text=""
+                    android:background="@color/lightgray"
+                    android:textColor="@color/black"
+                    />
+
+        </ScrollView>
+    </RelativeLayout>
+</LinearLayout>
